@@ -1,182 +1,125 @@
-/*
+/* PrismJS 1.22.0
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apex+apl+applescript+aql+arduino+arff+asciidoc+aspnet+asm6502+autohotkey+autoit+bash+basic+batch+bbcode+birb+bison+bnf+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cil+clojure+cmake+coffeescript+concurnas+csp+crystal+css-extras+cypher+d+dart+dax+dhall+diff+django+dns-zone-file+docker+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+firestore-security-rules+flow+fortran+ftl+gml+gcode+gdscript+gedcom+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+http+hpkp+hsts+ichigojam+icon+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keyman+kotlin+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+lolcode+lua+makefile+markdown+markup-templating+matlab+mel+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+pascaligo+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plsql+powerquery+powershell+processing+prolog+promql+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+q+qml+qore+r+racket+jsx+tsx+reason+regex+renpy+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+stan+iecst+stylus+swift+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+turtle+twig+typescript+typoscript+unrealscript+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+wiki+xeora+xml-doc+xojo+xquery+yaml+yang+zig */
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
 
-Night Owl for highlight.js (c) Carl Baxter <carl@cbax.tech>
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #ccc;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
 
-An adaptation of Sarah Drasner's Night Owl VS Code Theme 
-https://github.com/sdras/night-owl-vscode-theme 
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
 
-Copyright (c) 2018 Sarah Drasner
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-*/
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #011627;
-  color: #d6deeb;
 }
 
-/* General Purpose */
-.hljs-keyword {
-  color: #c792ea;
-  font-style: italic;
-}
-.hljs-built_in {
-  color: #addb67;
-  font-style: italic;
-}
-.hljs-type {
-  color: #82aaff;
-}
-.hljs-literal {
-  color: #ff5874;
-}
-.hljs-number {
-  color: #F78C6C;
-}
-.hljs-regexp {
-  color: #5ca7e4;
-}
-.hljs-string {
-  color: #ecc48d;
-}
-.hljs-subst {
-  color: #d3423e;
-}
-.hljs-symbol {
-  color: #82aaff;
-}
-.hljs-class {
-  color: #ffcb8b;
-}
-.hljs-function {
-  color: #82AAFF;
-}
-.hljs-title {
-  color: #DCDCAA;
-  font-style: italic;
-}
-.hljs-params {
-  color: #7fdbca;
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
 }
 
-/* Meta */
-.hljs-comment {
-  color: #637777;
-  font-style: italic;
-}
-.hljs-doctag {
-  color: #7fdbca;
-}
-.hljs-meta {
-  color: #82aaff;
-}
-.hljs-meta-keyword {
-  color: #82aaff;
-}
-.hljs-meta-string {
-  color: #ecc48d;
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #2d2d2d;
 }
 
-/* Tags, attributes, config */
-.hljs-section {
-  color: #82b1ff;
-}
-.hljs-tag,
-.hljs-name,
-.hljs-builtin-name {
-  color: #7fdbca;
-}
-.hljs-attr {
-  color: #7fdbca;
-}
-.hljs-attribute {
-  color: #80cbc4;
-}
-.hljs-variable {
-  color: #addb67;
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
 }
 
-/* Markup */
-.hljs-bullet {
-  color: #d9f5dd;
-}
-.hljs-code {
-  color: #80CBC4;
-}
-.hljs-emphasis {
-  color: #c792ea;
-  font-style: italic;
-}
-.hljs-strong {
-  color: #addb67;
-  font-weight: bold;
-}
-.hljs-formula {
-  color: #c792ea;
-}
-.hljs-link {
-  color: #ff869a;
-}
-.hljs-quote {
-  color: #697098;
-  font-style: italic;
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #999;
 }
 
-/* CSS */
-.hljs-selector-tag {
-  color: #ff6363;
+.token.punctuation {
+	color: #ccc;
 }
 
-.hljs-selector-id {
-  color: #fad430;
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+	color: #e2777a;
 }
 
-.hljs-selector-class {
-  color: #addb67;
-  font-style: italic;
+.token.function-name {
+	color: #6196cc;
 }
 
-.hljs-selector-attr,
-.hljs-selector-pseudo {
-  color: #c792ea;
-  font-style: italic;
+.token.boolean,
+.token.number,
+.token.function {
+	color: #f08d49;
 }
 
-/* Templates */
-.hljs-template-tag {
-  color: #c792ea;
-}
-.hljs-template-variable {
-  color: #addb67;
-}
-
-/* diff */
-.hljs-addition {
-  color: #addb67ff;
-  font-style: italic;
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+	color: #f8c555;
 }
 
-.hljs-deletion {
-  color: #EF535090;
-  font-style: italic;
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+	color: #cc99cd;
 }
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+	color: #7ec699;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+	color: #67cdcc;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.inserted {
+	color: green;
+}
+
