@@ -8,9 +8,9 @@ https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clik
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #f8f8f2;
+	color: #65f114;
 	background: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	text-shadow: 0 1px rgb(64, 186, 223);
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
 	text-align: left;
@@ -54,11 +54,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #8292a2;
+	color: #eb5959;
 }
 
 .token.punctuation {
-	color: #f8f8f2;
+	color: #147cd1;
 }
 
 .token.namespace {
@@ -84,7 +84,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #a6e22e;
+	color: #e22ee2;
 }
 
 .token.operator,
@@ -93,7 +93,7 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-	color: #f8f8f2;
+	color: #f0f007;
 }
 
 .token.atrule,
@@ -137,7 +137,7 @@ pre[data-line] {
 	margin-top: 1em; /* Same as .prism’s padding-top */
 
 	background: hsla(24, 20%, 50%,.08);
-	background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+	background: linear-gradient(to right, rgb(219, 75, 164) 70%, rgb(8, 205, 240));
 
 	pointer-events: none;
 
@@ -164,14 +164,14 @@ pre[data-line] {
 		left: .6em;
 		min-width: 1em;
 		padding: 0 .5em;
-		background-color: hsla(24, 20%, 50%,.4);
-		color: hsl(24, 20%, 95%);
+		background-color: rgba(235, 164, 57, 0.979);
+		color: hsl(202, 77%, 47%);
 		font: bold 65%/1.5 sans-serif;
 		text-align: center;
 		vertical-align: .3em;
 		border-radius: 999px;
 		text-shadow: none;
-		box-shadow: 0 1px white;
+		box-shadow: 0 1px rgb(205, 226, 13);
 	}
 
 	.line-highlight[data-end]:after {
@@ -192,7 +192,7 @@ pre[id].linkable-line-numbers span.line-numbers-rows > span:before {
 	cursor: pointer;
 }
 pre[id].linkable-line-numbers span.line-numbers-rows > span:hover:before {
-	background-color: rgba(128, 128, 128, .2);
+	background-color: rgb(6, 224, 240);
 }
 
 pre[class*="language-"].line-numbers {
@@ -214,7 +214,7 @@ pre[class*="language-"].line-numbers > code {
 	left: -3.8em;
 	width: 3em; /* works for line-numbers below 1000 lines */
 	letter-spacing: -1px;
-	border-right: 1px solid #999;
+	border-right: 1px solid rgb(168, 9, 134);
 
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -230,7 +230,7 @@ pre[class*="language-"].line-numbers > code {
 
 		.line-numbers-rows > span:before {
 			content: counter(linenumber);
-			color: #999;
+			color: rgb(231, 100, 100);
 			display: block;
 			padding-right: 0.8em;
 			text-align: right;
