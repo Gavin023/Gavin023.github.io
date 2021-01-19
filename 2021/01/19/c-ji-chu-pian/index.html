@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="残梦" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="残梦" type="application/atom+xml">
 </head>
 
 <div id="weather-v2-plugin-standard"></div>
@@ -523,8 +523,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/c/">
-                                <span class="chip bg-color">c++</span>
+                            <a href="/tags/C/">
+                                <span class="chip bg-color">C++</span>
                             </a>
                         
                     </div>
@@ -575,6 +575,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -594,17 +597,17 @@
 <p>![1541383817248](D:\C++\c++课件\第1阶段C++ 匠心之作 从0到1入门\C++基础入门讲义\assets\1541383817248.png)</p>
 <p>给C++文件起个名称，然后点击添加即可。</p>
 <p>![1541384140042](D:\C++\c++课件\第1阶段C++ 匠心之作 从0到1入门\C++基础入门讲义\assets\1541384140042.png)</p>
-<h4 id="1-1-3-编写代码"><a href="#1-1-3-编写代码" class="headerlink" title="1.1.3 编写代码"></a>1.1.3 编写代码</h4><pre><code class="c++">#include&lt;iostream&gt;
+<h4 id="1-1-3-编写代码"><a href="#1-1-3-编写代码" class="headerlink" title="1.1.3 编写代码"></a>1.1.3 编写代码</h4><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">#include&lt;iostream&gt;
 using namespace std;
 
 int main() {
 
-    cout &lt;&lt; "Hello world" &lt;&lt; endl;
+	cout &lt;&lt; "Hello world" &lt;&lt; endl;
 
-    system("pause");
+	system("pause");
 
-    return 0;
-}</code></pre>
+	return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h4 id="1-1-4-运行程序"><a href="#1-1-4-运行程序" class="headerlink" title="1.1.4 运行程序"></a>1.1.4 运行程序</h4><p>![1541384818688](D:\C++\c++课件\第1阶段C++ 匠心之作 从0到1入门\C++基础入门讲义\assets\1541384818688.png)</p>
 <h3 id="1-2-注释"><a href="#1-2-注释" class="headerlink" title="1.2 注释"></a>1.2 注释</h3><p><strong>作用</strong>：在代码中加一些说明和解释，方便自己或其他程序员程序员阅读代码</p>
 <p><strong>两种格式</strong></p>
@@ -624,22 +627,24 @@ int main() {
 <h3 id="1-3-变量"><a href="#1-3-变量" class="headerlink" title="1.3 变量"></a>1.3 变量</h3><p><strong>作用</strong>：给一段指定的内存空间起名，方便操作这段内存</p>
 <p><strong>语法</strong>：<code>数据类型 变量名 = 初始值;</code></p>
 <p><strong>示例：</strong></p>
-<pre><code class="C++">#include&lt;iostream&gt;
+<pre class="line-numbers language-C++" data-language="C++"><code class="language-C++">#include&lt;iostream&gt;
 using namespace std;
 
 int main() {
 
-    //变量的定义
-    //语法：数据类型  变量名 = 初始值
+	//变量的定义
+	//语法：数据类型  变量名 = 初始值
 
-    int a = 10;
+	int a = 10;
 
-    cout &lt;&lt; "a = " &lt;&lt; a &lt;&lt; endl;
+	cout &lt;&lt; "a = " &lt;&lt; a &lt;&lt; endl;
+	
+	system("pause");
 
-    system("pause");
+	return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-    return 0;
-}</code></pre>
+
 <blockquote>
 <p>注意：C++在创建变量时，必须给变量一个初始值，否则会报错</p>
 </blockquote>
@@ -658,24 +663,33 @@ int main() {
 </li>
 </ol>
 <p><strong>示例：</strong></p>
-<pre><code class="C++">//1、宏常量
+<pre class="line-numbers language-C++" data-language="C++"><code class="language-C++">//1、宏常量
 #define day 7
 
 int main() {
 
-    cout &lt;&lt; "一周里总共有 " &lt;&lt; day &lt;&lt; " 天" &lt;&lt; endl;
-    //day = 8;  //报错，宏常量不可以修改
+	cout &lt;&lt; "一周里总共有 " &lt;&lt; day &lt;&lt; " 天" &lt;&lt; endl;
+	//day = 8;  //报错，宏常量不可以修改
 
-    //2、const修饰变量
-    const int month = 12;
-    cout &lt;&lt; "一年里总共有 " &lt;&lt; month &lt;&lt; " 个月份" &lt;&lt; endl;
-    //month = 24; //报错，常量是不可以修改的
+	//2、const修饰变量
+	const int month = 12;
+	cout &lt;&lt; "一年里总共有 " &lt;&lt; month &lt;&lt; " 个月份" &lt;&lt; endl;
+	//month = 24; //报错，常量是不可以修改的
+	
+	
+	system("pause");
+
+	return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
-    system("pause");
 
-    return 0;
-}</code></pre>
+
+
+
+
+
+
 <h3 id="1-5-关键字"><a href="#1-5-关键字" class="headerlink" title="1.5 关键字"></a>1.5 关键字</h3><p><strong>作用：</strong>关键字是C++中预先保留的单词（标识符）</p>
 <ul>
 <li><strong>在定义变量或者常量时候，不要用关键字</strong></li>
@@ -822,20 +836,24 @@ int main() {
 <h3 id="2-2-sizeof关键字"><a href="#2-2-sizeof关键字" class="headerlink" title="2.2 sizeof关键字"></a>2.2 sizeof关键字</h3><p><strong>作用：</strong>利用sizeof关键字可以==统计数据类型所占内存大小==</p>
 <p><strong>语法：</strong> <code>sizeof( 数据类型 / 变量)</code></p>
 <p><strong>示例：</strong></p>
-<pre><code class="C++">int main() {
+<pre class="line-numbers language-C++" data-language="C++"><code class="language-C++">int main() {
 
-    cout &lt;&lt; "short 类型所占内存空间为： " &lt;&lt; sizeof(short) &lt;&lt; endl;
+	cout &lt;&lt; "short 类型所占内存空间为： " &lt;&lt; sizeof(short) &lt;&lt; endl;
 
-    cout &lt;&lt; "int 类型所占内存空间为： " &lt;&lt; sizeof(int) &lt;&lt; endl;
+	cout &lt;&lt; "int 类型所占内存空间为： " &lt;&lt; sizeof(int) &lt;&lt; endl;
 
-    cout &lt;&lt; "long 类型所占内存空间为： " &lt;&lt; sizeof(long) &lt;&lt; endl;
+	cout &lt;&lt; "long 类型所占内存空间为： " &lt;&lt; sizeof(long) &lt;&lt; endl;
 
-    cout &lt;&lt; "long long 类型所占内存空间为： " &lt;&lt; sizeof(long long) &lt;&lt; endl;
+	cout &lt;&lt; "long long 类型所占内存空间为： " &lt;&lt; sizeof(long long) &lt;&lt; endl;
 
-    system("pause");
+	system("pause");
 
-    return 0;
-}</code></pre>
+	return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
 <blockquote>
 <p><strong>整型结论</strong>：==short &lt; int &lt;= long &lt;= long long==</p>
 </blockquote>
@@ -866,28 +884,38 @@ int main() {
 </tr>
 </tbody></table>
 <p><strong>示例：</strong></p>
-<pre><code class="C++">int main() {
+<pre class="line-numbers language-C++" data-language="C++"><code class="language-C++">int main() {
 
-    float f1 = 3.14f;
-    double d1 = 3.14;
+	float f1 = 3.14f;
+	double d1 = 3.14;
 
-    cout &lt;&lt; f1 &lt;&lt; endl;
-    cout &lt;&lt; d1&lt;&lt; endl;
+	cout &lt;&lt; f1 &lt;&lt; endl;
+	cout &lt;&lt; d1&lt;&lt; endl;
 
-    cout &lt;&lt; "float  sizeof = " &lt;&lt; sizeof(f1) &lt;&lt; endl;
-    cout &lt;&lt; "double sizeof = " &lt;&lt; sizeof(d1) &lt;&lt; endl;
+	cout &lt;&lt; "float  sizeof = " &lt;&lt; sizeof(f1) &lt;&lt; endl;
+	cout &lt;&lt; "double sizeof = " &lt;&lt; sizeof(d1) &lt;&lt; endl;
 
-    //科学计数法
-    float f2 = 3e2; // 3 * 10 ^ 2 
-    cout &lt;&lt; "f2 = " &lt;&lt; f2 &lt;&lt; endl;
+	//科学计数法
+	float f2 = 3e2; // 3 * 10 ^ 2 
+	cout &lt;&lt; "f2 = " &lt;&lt; f2 &lt;&lt; endl;
 
-    float f3 = 3e-2;  // 3 * 0.1 ^ 2
-    cout &lt;&lt; "f3 = " &lt;&lt; f3 &lt;&lt; endl;
+	float f3 = 3e-2;  // 3 * 0.1 ^ 2
+	cout &lt;&lt; "f3 = " &lt;&lt; f3 &lt;&lt; endl;
 
-    system("pause");
+	system("pause");
 
-    return 0;
-}</code></pre>
+	return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+
 <h3 id="2-4-字符型"><a href="#2-4-字符型" class="headerlink" title="2.4 字符型"></a>2.4 字符型</h3><p><strong>作用：</strong>字符型变量用于显示单个字符</p>
 <p><strong>语法：</strong><code>char ch = 'a';</code></p>
 <blockquote>
@@ -901,23 +929,23 @@ int main() {
 <li>字符型变量并不是把字符本身放到内存中存储，而是将对应的ASCII编码放入到存储单元</li>
 </ul>
 <p>示例：</p>
-<pre><code class="C++">int main() {
+<pre class="line-numbers language-C++" data-language="C++"><code class="language-C++">int main() {
+	
+	char ch = 'a';
+	cout &lt;&lt; ch &lt;&lt; endl;
+	cout &lt;&lt; sizeof(char) &lt;&lt; endl;
 
-    char ch = 'a';
-    cout &lt;&lt; ch &lt;&lt; endl;
-    cout &lt;&lt; sizeof(char) &lt;&lt; endl;
+	//ch = "abcde"; //错误，不可以用双引号
+	//ch = 'abcde'; //错误，单引号内只能引用一个字符
 
-    //ch = "abcde"; //错误，不可以用双引号
-    //ch = 'abcde'; //错误，单引号内只能引用一个字符
+	cout &lt;&lt; (int)ch &lt;&lt; endl;  //查看字符a对应的ASCII码
+	ch = 97; //可以直接用ASCII给字符型变量赋值
+	cout &lt;&lt; ch &lt;&lt; endl;
 
-    cout &lt;&lt; (int)ch &lt;&lt; endl;  //查看字符a对应的ASCII码
-    ch = 97; //可以直接用ASCII给字符型变量赋值
-    cout &lt;&lt; ch &lt;&lt; endl;
+	system("pause");
 
-    system("pause");
-
-    return 0;
-}</code></pre>
+	return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>ASCII码表格：</p>
 <table>
 <thead>
@@ -1340,17 +1368,25 @@ int main() {
 </tr>
 </tbody></table>
 <p>示例：</p>
-<pre><code class="C++">int main() {
+<pre class="line-numbers language-C++" data-language="C++"><code class="language-C++">int main() {
+	
+	
+	cout &lt;&lt; "\\" &lt;&lt; endl;
+	cout &lt;&lt; "\tHello" &lt;&lt; endl;
+	cout &lt;&lt; "\n" &lt;&lt; endl;
+
+	system("pause");
+
+	return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
-    cout &lt;&lt; "\\" &lt;&lt; endl;
-    cout &lt;&lt; "\tHello" &lt;&lt; endl;
-    cout &lt;&lt; "\n" &lt;&lt; endl;
 
-    system("pause");
 
-    return 0;
-}</code></pre>
+
+
+
+
 
                 
             </div>
@@ -1415,8 +1451,8 @@ int main() {
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/c/">
-                                    <span class="chip bg-color">c++</span>
+                                <a href="/tags/C/">
+                                    <span class="chip bg-color">C++</span>
                                 </a>
                             
                         </div>
@@ -1891,8 +1927,8 @@ int main() {
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/c/">
-                        <span class="chip bg-color">c++</span>
+                    <a href="/tags/C/">
+                        <span class="chip bg-color">C++</span>
                     </a>
                     
                 </div>
