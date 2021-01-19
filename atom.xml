@@ -6,7 +6,7 @@
   <link href="http://gavin023.github.io/atom.xml" rel="self"/>
   
   <link href="http://gavin023.github.io/"/>
-  <updated>2021-01-18T06:13:38.210Z</updated>
+  <updated>2021-01-18T06:02:31.393Z</updated>
   <id>http://gavin023.github.io/</id>
   
   <author>
@@ -15,19 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>archives</title>
-    <link href="http://gavin023.github.io/2021/01/18/archives/"/>
-    <id>http://gavin023.github.io/2021/01/18/archives/</id>
-    <published>2021-01-18T06:13:38.000Z</published>
-    <updated>2021-01-18T06:13:38.210Z</updated>
-    
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
