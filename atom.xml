@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>残梦</title>
+  
+  <subtitle>残梦</subtitle>
+  <link href="http://gavin023.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://gavin023.github.io/"/>
+  <updated>2021-01-20T09:32:37.642Z</updated>
+  <id>http://gavin023.github.io/</id>
+  
+  <author>
+    <name>Gavin</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>c++基础篇</title>
+    <link href="http://gavin023.github.io/2021/01/20/c-ji-chu-pian/"/>
+    <id>http://gavin023.github.io/2021/01/20/c-ji-chu-pian/</id>
+    <published>2021-01-20T09:31:07.000Z</published>
+    <updated>2021-01-20T09:32:37.642Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;package com.util;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="http://gavin023.github.io/tags/C/"/>
+    
+  </entry>
+  
+</feed>
