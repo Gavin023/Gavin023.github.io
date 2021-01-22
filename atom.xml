@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>残梦</title>
+  
+  <subtitle>残梦</subtitle>
+  <link href="http://gavin023.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://gavin023.github.io/"/>
+  <updated>2021-01-22T07:51:14.432Z</updated>
+  <id>http://gavin023.github.io/</id>
+  
+  <author>
+    <name>Gavin</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++基础篇1</title>
+    <link href="http://gavin023.github.io/2021/01/22/c-ji-chu-pian-1/"/>
+    <id>http://gavin023.github.io/2021/01/22/c-ji-chu-pian-1/</id>
+    <published>2021-01-22T07:41:50.000Z</published>
+    <updated>2021-01-22T07:51:14.432Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;C-基础入门&quot;&gt;&lt;a href=&quot;#C-基础入门&quot; class=&quot;headerlink&quot; title=&quot;C++基础入门&quot;&gt;&lt;/a&gt;C++基础入门&lt;/h1&gt;&lt;h2 id=&quot;1-C-初识&quot;&gt;&lt;a href=&quot;#1-C-初识&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="http://gavin023.github.io/tags/C/"/>
+    
+  </entry>
+  
+</feed>
