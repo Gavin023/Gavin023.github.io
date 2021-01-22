@@ -420,40 +420,54 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
+    partial('_partial/bg-cover')  <main class="content"> <div id="indexCard" class="index-card"> <div class="container "> <div class="card"> <div class="card-content">  <div class="dream">
+    
+    <div class="title center-align">
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
+    </div>
+    
     <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                残梦
-                
-            </div>
-
-            <div class="description center-align">
-                
-                   <span id="jinrishici-sentence">正在加载今日诗词....</span>
-                
-            </div>
+        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
+            在厦门拥有一所房子，然后面朝大海，春暖花开---😄😄😄
+        </div>
+    </div>
+</div>
+    <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;精彩视频
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                    ></div>
         </div>
     </div>
 </div>
 
-
+<script src="/libs/dplayer/DPlayer.min.js"></script>
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/' + Math.floor(Math.random()*6) + '.jpg)');
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: '',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
 </script>
+  <div id="recommend-sections" class="recommend"> </div> </div> </div> </div> </div> </main>
 
-
-
-    </div>
-</div>
-<main class="content">
-
-    
-	</main>
 
     <footer class="page-footer bg-color">
     
